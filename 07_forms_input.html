@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms & Input</title>
+</head>
+<body>
+  <!--action is where the form will be submitted to it can be a php file and insert it into a database-->
+  <form action="process.php">
+    <div>
+      <!--for optional to add, it will focus on the input when you click on the label-->
+      <!--for in label and id in input should be same for above point to work-->
+      <!--In php when u want to grab a value of input we use the name attribute-->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+    </div><br>
+    <!-- Add placeholder as a ghost text-->
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter a email">
+    </div><br>
+    <div>
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+    </div><br>
+    <div>
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+          <!--If you want one of list to be selected by default use selected-->
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div><br>
+    <div>
+      <label for="age">Age</label>
+    <input type="number" name="age" id="age">
+    </div><br>
+    <div>
+      <label for="birthdata">Birthdata</label>
+    <input type="date" name="birthdate" id="birthdate">
+    </div><br>
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" name="memebership" value="simple">Simple
+      <input type="radio" name="memebership" value="standard">Standard
+      <input type="radio" name="memebership" value="premium">Premium
+      <!--If you want one of radio to be selected by default use checked-->
+      <input type="radio" name="memebership" value="super" checked>Super
+    </div><br>
+    <!--Chekbos to select multiple options-->
+    <!--value is the actual data that gets sent to the server, make sure to add id, name and value in all fields-->
+    <div>
+      <label for="hobbies">My hobbies</label>
+      <input type="checkbox" name="basketball" id="basketball">Basketball
+      <input type="checkbox" name="football" id="football">Football
+      <input type="checkbox" name="cricket" id="cricket">Cricket
+      <input type="checkbox" name="hockey" id="hockey">Hockey
+    </div><br>
+    <!--To submit a form we can use input or button tag-->
+    <div>
+      <input type="submit" value="Submit">
+      <button type="submit">Cancel</button>
+      <button type="reset">Reset</button>
+      <button disabled="disabled">Disabled</button>
+    </div>
+  </form>
+</body>
+</html>

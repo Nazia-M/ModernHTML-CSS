@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline vs block</title>
+</head>
+<body>
+  <!--Block elements - Leave space after them
+    form, header, h1 to h6, p, div, hr, pre, table, ol, ul, li-->
+  <form action="">
+    <header>Welcome</header>
+    <h1>Heading 1</h1>
+    <h6>Heading 6</h6>
+    <!--Never use styling in html, we will use css for that-->
+    <p style="border:2px red solid;">Lorem ipsum <hr>dolor sit<hr> amet 
+      <pre>consectetur adipisicing elit. 
+      Rem consectetur earum eaque </pre>
+      vitae id blanditiis ab officiis accusamus quis impedit.</p>
+    <div>Hellow</div>
+    <table>
+      <ol>
+        <li>Ordered List - Item1</li>
+      </ol>
+      <ul>
+        <li>UNordered List - Item1</li>
+      </ul>
+    </table>
+  </form>
+  <!--Inline Elements - Do not leave spacing
+  img, a, span, textarea, label, input, button, select, br, sub, sup, abbr, strong, em-->
+  <img src="/images/sample1.jpg" alt="">
+  <!-- if we give href as # on clicking link it will be on the same page-->
+  <a href="#">Link to form</a>
+  <span>
+    <textarea name="name" id="name" cols="30" rows="10" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Voluptates, aliquid?</textarea>
+    <label for="Name">Name</label>
+    <input type="text">
+    <button type="submit">Submit</button>
+    <select name="select" id="select">List</select>
+  </span>
+  <sub>Sub-Hello</sub>
+  <sup>Sup-Hello</sup>
+  <abbr title="Abbrevaiation of">abbr</abbr>
+  <!--We can change from block to inline and inline to block using css-->
+</body>
+</html>
