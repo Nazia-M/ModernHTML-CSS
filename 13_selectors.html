@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Selectors</title>
   <style>
+    /* Body styling */
+    body{
+      background-color: chartreuse;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 10px;
+      line-height: 1.6em;
+    }
     /* # is for id and . is for class */
     #welcome{
       color: aqua;
@@ -13,23 +20,37 @@
     .about{
       color: blue;
     }
-    /* Multi selector */
-    #welcome,#contact, .about{
+    /* Multiple selectors */
+    #welcome,#contact, .about, h3{
       border: 2px green solid;
+    }
+    /* Nested selector */
+    #first p{
+      font-size: 20px;
+    }
+    #first p span{
+      font-weight: bold;
+    }
+    .second p span{
+      font-style: italic;
     }
   </style>
 </head>
 <body>
-  <div>
+  <div id="first">
     <h2 id="welcome">Welcome</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae pariatur illum tempore ea. Saepe nesciunt quae quia, expedita rem, error cumque quisquam aspernatur accusantium quod laudantium excepturi ipsum magnam?</p>
+    <p>Lorem ipsum dolor <span>amet consectetur adipisicing elit. </span> Consequatur molestiae pariatur illum tempore ea. Saepe nesciunt quae quia, expedita rem, error cumque quisquam aspernatur accusantium quod laudantium excepturi ipsum magnam?</p>
   </div>
-  <div>
+  <div class="second">
     <h2 class="about">About</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae pariatur illum tempore ea. Saepe nesciunt quae quia, expedita rem, error cumque quisquam aspernatur accusantium quod laudantium excepturi ipsum magnam?</p>
+    <p>Lorem ipsum dolor <span> sit amet consectetur adipisicing elit.</span>  Consequatur molestiae pariatur illum tempore ea. Saepe nesciunt quae quia, expedita rem, error cumque quisquam aspernatur accusantium quod laudantium excepturi ipsum magnam?</p>
   </div>
   <div>
     <h2 id="contact">Contact</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae pariatur illum tempore ea. Saepe nesciunt quae quia, expedita rem, error cumque quisquam aspernatur accusantium quod laudantium excepturi ipsum magnam?</p>
+  </div>
+  <div>
+    <h3>Well H3 Selector</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae pariatur illum tempore ea. Saepe nesciunt quae quia, expedita rem, error cumque quisquam aspernatur accusantium quod laudantium excepturi ipsum magnam?</p>
   </div>
 </body>
