@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float & Align</title>
+  <!-- floats was used previous but now mostly css grid or flex are used for same purpose -->
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container{
+      /* For mobile or other devices width will look really bad so use max-width instead */
+      max-width: 960px;
+      /* 10px top/bottom, left/right auto */
+      margin: 10px auto;
+    }
+    .box{
+      background-color:aqua;
+      border: 5px salmon solid;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    .box p{
+      text-align: left;
+    }
+    .box h3{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Currently in websites your content will be in the middle, to do that
+  1. Have a container/wrapper class/id
+  2. Add width  
+  3. set margin to auto -->
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at ab optio assumenda laboriosam non magni ratione nesciunt ducimus, sed expedita facere voluptatem aut sapiente accusamus voluptas illum. Sunt consectetur optio inventore in culpa beatae porro, fugit minima saepe? Aliquam id modi magnam soluta laboriosam a iure obcaecati quia eaque exercitationem, iusto debitis sapiente mollitia quasi recusandae laudantium voluptatibus maiores voluptatem impedit, assumenda omnis? Sit quod minima reiciendis commodi provident! Sit facilis eos non culpa vero ipsam veniam quisquam totam possimus, explicabo asperiores, a dolor consequuntur ipsa quidem facere? Quisquam cum quo eius laboriosam amet, rerum neque tenetur possimus maxime?</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading 2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at ab optio assumenda laboriosam non magni ratione nesciunt ducimus, sed expedita facere voluptatem aut sapiente accusamus voluptas illum. Sunt consectetur optio inventore in culpa beatae porro, fugit minima saepe? Aliquam id modi magnam soluta laboriosam a iure obcaecati quia eaque exercitationem, iusto debitis sapiente mollitia quasi recusandae laudantium voluptatibus maiores voluptatem impedit, assumenda omnis? Sit quod minima reiciendis commodi provident! Sit facilis eos non culpa vero ipsam veniam quisquam totam possimus, explicabo asperiores, a dolor consequuntur ipsa quidem facere? Quisquam cum quo eius laboriosam amet, rerum neque tenetur possimus maxime?</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at ab optio assumenda laboriosam non magni ratione nesciunt ducimus, sed expedita facere voluptatem aut sapiente accusamus voluptas illum. Sunt consectetur optio inventore in culpa beatae porro, fugit minima saepe? Aliquam id modi magnam soluta laboriosam a iure obcaecati quia eaque exercitationem, iusto debitis sapiente mollitia quasi recusandae laudantium voluptatibus maiores voluptatem impedit, assumenda omnis? Sit quod minima reiciendis commodi provident! Sit facilis eos non culpa vero ipsam veniam quisquam totam possimus, explicabo asperiores, a dolor consequuntur ipsa quidem facere? Quisquam cum quo eius laboriosam amet, rerum neque tenetur possimus maxime?</p>
+    </div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model/Margin & padding</title>
+  <style>
+    /* By default margin and padding are already added to paragraph, if you want to remove them you can reset css */
+    /* * selects everything on the page */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .box{
+      background-color: aqua;
+      border: 2px green solid;
+      /* padding on all 4 sides */
+      padding: 20px;
+      /* padding per side */
+      /* Note - the css below will override above ones */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      padding-left: 50px;
+      /* padding shorthand = top, right, bottom, left */
+      /* padding shorthand = top/bottom left/right if top/bottom are same values and left/right are same values */
+      padding: 10px 20px 30px 50px;
+      padding: 10px 20px;
+      /* margin on all 4 sides */
+      /* margin syntax also same as above for padding per side, shorthand. */
+      margin: 20px;
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      margin-left: 50px;
+      margin: 10px 20px 30px 50px;
+      margin: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rerum assumenda enim, illo quisquam facilis reprehenderit. Quis in, qui, praesentium, quasi laudantium et quo magni sint excepturi minima cum alias. Repudiandae maiores, doloribus hic ex ipsum odit! Culpa sed repellendus, quaerat facere nemo numquam! Enim, adipisci reiciendis repudiandae dolore dignissimos sequi quos suscipit velit consectetur debitis vitae non quidem neque a. Quod provident asperiores maxime labore odit, amet nesciunt molestiae facilis necessitatibus repellendus aspernatur praesentium, voluptas quam ducimus dolore tempore laborum iusto. Illum ipsum, harum error hic doloribus provident sit sint? Tempore sint consectetur nihil totam dignissimos laboriosam ipsa corporis.</p>
+  </div>
+  <div class="box">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rerum assumenda enim, illo quisquam facilis reprehenderit. Quis in, qui, praesentium, quasi laudantium et quo magni sint excepturi minima cum alias. Repudiandae maiores, doloribus hic ex ipsum odit! Culpa sed repellendus, quaerat facere nemo numquam! Enim, adipisci reiciendis repudiandae dolore dignissimos sequi quos suscipit velit consectetur debitis vitae non quidem neque a. Quod provident asperiores maxime labore odit, amet nesciunt molestiae facilis necessitatibus repellendus aspernatur praesentium, voluptas quam ducimus dolore tempore laborum iusto. Illum ipsum, harum error hic doloribus provident sit sint? Tempore sint consectetur nihil totam dignissimos laboriosam ipsa corporis.</p>
+  </div>
+  <div class="box">
+    <h3>Box Three</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rerum assumenda enim, illo quisquam facilis reprehenderit. Quis in, qui, praesentium, quasi laudantium et quo magni sint excepturi minima cum alias. Repudiandae maiores, doloribus hic ex ipsum odit! Culpa sed repellendus, quaerat facere nemo numquam! Enim, adipisci reiciendis repudiandae dolore dignissimos sequi quos suscipit velit consectetur debitis vitae non quidem neque a. Quod provident asperiores maxime labore odit, amet nesciunt molestiae facilis necessitatibus repellendus aspernatur praesentium, voluptas quam ducimus dolore tempore laborum iusto. Illum ipsum, harum error hic doloribus provident sit sint? Tempore sint consectetur nihil totam dignissimos laboriosam ipsa corporis.</p>
+  </div>
+</body>
+</html>
